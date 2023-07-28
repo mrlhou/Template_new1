@@ -1,0 +1,40 @@
+    /*  3.8 Blog pages  */
+
+    .blog-item{
+        width: 32%;
+        float: left;
+        padding: 10px;
+        background-color: var(--bg-Color);
+    }
+    
+    .blog-item-img img{
+        width: 100%;
+    }
+    .blog-item.mg{
+        margin: 0 2%;
+    }
+    .blog-list{
+        margin-bottom: 10px;
+    }
+    .blog-list li{
+        display: inline;
+    }
+    .blog-list li.mg{
+        margin: 0 15px;
+    }
+    .blog-info{
+        padding: 20px;
+    }
+    .blog-item-title{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .blog-item-description{
+        color: var(--grayColor);
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+    .blog-link{
+        color: var(--mainColor);
+    }
+    

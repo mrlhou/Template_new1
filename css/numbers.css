@@ -1,0 +1,34 @@
+/* 3.7 Numbers section */
+
+
+.numbers{
+    position: relative;
+    background-image: url(../images/background/background2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+}
+.numbers .container{
+    padding-top: 0;
+}
+.numbers-items{
+    overflow: hidden;
+    padding: 100px 0;
+}
+.number-item{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.number-item .icon{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+.number-item .number-item-num{
+    color: var(--whiteColor);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.number-item .number-item-description{
+    color: var(--whiteColor);
+}

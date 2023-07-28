@@ -1,0 +1,134 @@
+/* 
+    1-common styles
+    2-General styles
+    3-Section styles
+        3.0 Header section
+        3.1 Home section
+        3.2 About section
+        3.3 portfolio section
+        3.4 Servicesc section
+        3.5 Prices section
+        3.6 Team section
+        3.7 Blog pages
+        3.8 Contact section
+        3.9 Footer section 
+
+*/
+
+/* 1-common */
+/* 
+
+    - container
+    - overlay
+    - opacity hover
+    - section header
+    - section padding
+    - hover effect 1 (left to right)
+    - hover effect 2 (top to bottom)
+*/
+
+/* 1-common */
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+}
+.hover-opacity:hover{
+    opacity: 0.8;
+    transition: opacity .5s; /* CSS3 */
+}
+.ltr-effect , .ttb-effect{
+    position: relative;
+}
+.ltr-effect::after ,.ttb-effect::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #333;
+}
+
+.ltr-effect:hover::after{
+    width: 100%;
+    transition: width .5s;
+}
+.ltr-effect::after{
+    width: 0;
+}
+.ttb-effect::after{
+    height: 0;
+}
+.ttb-effect:hover::after{
+    height: 100%;
+    transition: height .5s;
+}
+
+:root{
+    --mainColor: #6195ff;
+    --whiteColor: #fff; 
+    --grayColor  : #999; 
+    --bg-Color: #f9f9f9; 
+    --br-Color : #e8e8e8; 
+    --bl-Color: #222;
+}
+
+/* 2- General css style */
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; /* CSS3 */
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+.container{
+    width: 80%;
+    padding-top: 50px;
+    margin: auto;
+}
+.clear{
+    clear: both;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif
+}
+button{
+    font-family: inherit;
+}
+a{
+    text-decoration: none;
+}
+.section-header{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.section-title{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.section-line{
+    display:block;
+    width: 50px;
+    margin: auto;
+    height: 5px;
+    background-color:var(--mainColor);
+}
+.pd-y{
+    padding: 120px 0;
+}
+.mg-b{
+    margin-bottom: 10px;
+}
+li{
+    list-style-type: none;
+}

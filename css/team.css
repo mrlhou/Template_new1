@@ -1,0 +1,72 @@
+    /*  3.7 Team section    */
+    .team-content{
+        height: 60%;
+    }
+    .team-item{
+        width: 30%;
+        float: left;
+        background-color: var(--bg-Color);
+        padding: 40px 15px;
+        text-align: center;
+    }
+    .team-item.mg{
+        margin: 0 5%;
+    }
+    .team-item-img{
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .team-item-img img{
+        width: 100%;
+    }
+    .team-item-img .team-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .5s , visibility .5s;
+    } 
+    .team-overlay a{
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: var(--mainColor);
+        color: var(--whiteColor);
+        margin-left: auto;
+    }
+    .team-overlay a i{
+        line-height: 40px;
+    }
+    .team-item-info{
+       line-height: 1.5;
+    }
+    .team-item-info .team-item-title{
+        color: #222;
+        transition: color 1s;
+    }
+    .team-item-info .team-item-description{
+        color: var(--grayColor);
+        text-transform: uppercase;
+        font-size: 14px;
+        transition: color 1s;
+    }
+    .team-item:hover .team-overlay{
+        opacity: 1;
+        visibility: visible;
+    }
+    .team-item:hover .team-item-title{
+        color: var(--whiteColor);
+    }
+    .team-item:hover .team-item-description{
+        color: var(--mainColor);
+    }
+    .team-item.ttb-effect{
+        z-index: 1;
+    }
+    .team-item.ttb-effect::after{
+        background-color: black;
+    }

@@ -1,0 +1,33 @@
+  /*  3.4 Offer section   */
+
+  .Offer-item{
+    width: 30%;
+    float: left;
+    margin-bottom: 5%;
+    border: 0.2px solid var(--br-Color) ;
+    padding: 20px 10px 30px 70px;
+    position: relative;
+}
+.Offer-item.mg{
+    margin: 0 5%;
+}
+.Offer-item .icon{
+    position: absolute;
+    left: 5%;
+    top: 23%;
+    font-size: 30px;
+}
+.Offer-item-title{
+    text-transform: capitalize;
+    margin: 10px 0;
+    font-size: 20px;
+}
+.Offer-item-description{
+    margin: 10px 0;
+    line-height: 1.6;
+    color: var(--grayColor);
+}
+.Offer-item:hover .Offer-item-title{
+    color: var(--whiteColor);
+    transition: color .5s;
+}

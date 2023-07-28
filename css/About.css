@@ -1,0 +1,30 @@
+    /*  3.2 About section   */
+    .About-item{
+        width: 30%;
+        float: left;
+        text-align: center;
+        border: 0.2px solid var(--br-Color) ;
+        padding: 40px 30px;
+    }
+    .About-item:hover .About-item-title{
+        color: var(--whiteColor);
+        transition: color .5s;
+    }
+    .About-item.mg{
+        margin: 0 5%;
+    }
+    .icon{
+        color: var(--mainColor);
+    }
+    .About-item-title{
+        text-transform: capitalize;
+    }
+    .About-description{
+        line-height: 1.8;
+        color: var(--grayColor);
+    }
+    .About-item a{
+        color: var(--mainColor);
+        text-transform: capitalize;
+    }
+    

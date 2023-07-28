@@ -1,0 +1,41 @@
+   /*  3.10 Footer section*/
+
+.footer{
+    background-color: #222;
+    margin-top: 40px;
+}
+
+.footer.pd-y{
+    padding: 60px 0;
+}
+.footer-content{
+    text-align: center;
+}
+.footer-links li{
+    display: inline-block;
+    margin: 30px 5px;
+    
+}
+.footer-links li a{
+    display: block;
+    height: 40px;
+    width: 40px;
+    color: var(--whiteColor);
+    background-color: var(--mainColor);
+    border-radius: 50%;
+}
+.footer-links li a i{
+    line-height: 40px;
+    transition: opacity .2s;
+}
+.footer-links li a:hover i{
+    opacity: 0.7;
+}
+.copyright{
+    color: var(--grayColor);
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.copyright a{
+    color: var(--mainColor);
+}

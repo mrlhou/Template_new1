@@ -1,0 +1,89 @@
+/* 3.0  Blog / Header section */
+
+.header{
+    width: 100%;
+    position: fixed;
+    z-index: 1; 
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 50px;
+/*     border-bottom: 3px solid black; */
+}
+.header .container{
+    padding-top: 0;
+}
+.header .logo{
+    width: 40%;
+    float: left;
+}
+.header .logo img{
+    width: 25%;
+    padding: 10px;
+}
+.header .nav{
+    float: left;
+    width: 60%;
+    list-style-type: none;
+    text-align: right;
+}
+.header .nav > li{
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+}
+.header .nav > li > a{
+    color: var(--bl-Color);
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    padding: 25px 10px;
+}
+.header .nav > li > a::after,.header .nav > li > a.active::after{
+    content: " ";
+    display: block;
+    height: 2px;
+    background-color: var(--mainColor);
+    margin-top: 2px;
+    transition: width .5s;
+}
+.header .nav > li > a::after{
+    width: 0;
+}
+.header .nav > li > a:hover::after{
+    width: 100%;
+}
+.header .nav > li > a.active::after{
+    width: 100%;
+}
+.Dropdown{
+    position: relative;
+}
+.Dropdown-menu{
+    position: absolute;
+    background-color: var(--mainColor);
+    width: 100px;
+    text-align: center;
+    list-style-type: none;
+    left: -5%;
+    top: 90%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ,  visibility .5s;
+    
+}
+.Dropdown-menu li a{
+    color: var(--whiteColor);
+    display: block;
+    padding: 10px;
+}
+.Dropdown:hover .Dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.Dropdown a i{
+    margin-left: 7px;
+    font-size: 10px;
+}
+.Dropdown:hover .arrow{
+    transform: rotate(90deg);
+    transition: all .4s;
+}

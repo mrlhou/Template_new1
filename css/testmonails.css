@@ -1,0 +1,44 @@
+    /*  3.7 Testmonails section */
+
+    .testmonails{
+        position: relative;
+        background-image: url(../images/background/background3.webp);
+        background-size: cover;
+        background-attachment: fixed;
+        height: 400px;
+    }
+    .testmonail-content{
+        overflow: hidden;
+        margin: 100px auto;
+        width: 60%;
+    }
+    .testmonails-item{
+        width: 50%;
+        float: left;
+        padding: 10px;
+        color: var(--whiteColor);
+    }
+    .testmonails-item .testmonail-toplayer{
+        padding: 10px 2px 40px 70px;
+        position: relative;
+    }
+    .testmonails-item .testmonail-toplayer img{
+        position: absolute;
+        left:0px;
+        border-radius: 50%;
+    }
+    .testmonails-item .testmonail-toplayer h2{
+        color: var(--whiteColor);
+        text-transform: capitalize;
+    }
+    .testmonails-item .testmonail-toplayer span{
+        color: var(--mainColor);
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    .testmonails-item .testmonail-description{
+        line-height: 1.7;
+        font-size: 17px;
+        margin-right: 5px;
+    }
+    

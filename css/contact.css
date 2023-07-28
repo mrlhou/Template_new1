@@ -1,0 +1,85 @@
+    /*  3.9 Contact section */
+
+    .contact-content{
+        overflow: hidden;
+        text-align: center;
+        padding: 50px;
+    }
+    .contact-item{
+        float: left;
+        width: 30%;
+        padding: 10px;
+        margin-bottom: 35px;
+    }
+    .contact-item.mg{
+        margin: 0 5%;
+    }
+    .contact-item .icon{
+        font-size: 35px;
+    }
+    .contact-item .contact-item-title{
+        margin: 15px 0;
+        text-transform: capitalize;
+    } 
+    .contact-item .contact-item-description{
+        color: var(--grayColor);
+    }
+    .contact-inputs{
+         margin: 0 auto;
+         width: 65%;
+         text-align: center;
+         padding: 10px;
+         overflow: hidden;
+    }
+    .contact-inputs div input{
+        background-color: var(--bg-Color);
+        margin-bottom: 15px;
+        height: 40px;
+        padding: 6px;
+        outline: none;
+        border: none;
+        width: 100%;
+    }
+    .contact-inputs div{
+        padding: 10px;
+    }
+    .contact-inputs div input:focus{
+        border-bottom: 2px solid var(--mainColor);
+        border-top: .2px solid var(--mainColor);
+        border-left: .2px solid var(--mainColor);
+        border-right: .2px solid var(--mainColor);
+        transition: border-bottom .1s,border-top .4s ,border-left .4s,border-right .4s;
+    }
+    .contact-inputs .input-name{
+        width: 46.5%;
+        margin-right: 3% ;
+        float: left;
+    }
+    .contact-inputs .input-email{
+        width: 46.5%;
+        float: left;
+    }
+    .contact-inputs .input-subject{
+        width: 97%;
+    }
+    .contact-inputs .input-message{
+        width: 97%;
+        margin-bottom: 10px;
+        padding: 5px;
+        outline: none;
+        border: none;
+    }
+    
+    .contact-btn{
+        margin-top: 35px;
+    }
+    .contact-btn a{
+        background-color: var(--mainColor);
+        color: var(--whiteColor);
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: opacity .2s;
+    }
+    .contact-btn a:hover{
+        opacity: .9;
+    }
